@@ -1,6 +1,4 @@
 (() => {
- const range=document.getElementById('smileRange'),timeline=document.getElementById('smileTimeline');
- range.addEventListener('input',()=>timeline.style.setProperty('--marker',range.value+'%'));
  const canvas=document.getElementById('heroPixels'),ctx=canvas.getContext('2d');if(!ctx)return;
  const reduced=matchMedia('(prefers-reduced-motion: reduce)');let width=0,height=270,frame=0,visible=true,t=0,last=0;
  let pointer={x:-1000,y:-1000};
