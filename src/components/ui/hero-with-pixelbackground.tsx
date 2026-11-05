@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { motion, useReducedMotion } from 'motion/react'
-import { ArrowUpRight } from 'lucide-react'
 import PixelBackground from './pixel-background'
 import InteractiveHoverButton from './interactive-hover-button'
 
@@ -32,12 +31,12 @@ export default function Hero() {
         <div className="hero-product-gallery" aria-label="Clear aligner product illustrations">
           {products.map((product, index) => <figure className="hero-product-photo" key={product.src}>
             <img src={product.src} alt={product.alt} width="500" height="400" decoding="async" />
-            <figcaption><span>0{index + 1}</span>{product.label}<ArrowUpRight size={13} aria-hidden="true" /></figcaption>
+            <figcaption><span>0{index + 1}</span>{product.label}</figcaption>
           </figure>)}
         </div>
         <span className="hero-image-note">Illustrative product imagery</span>
       </motion.div>
-      <div className="pixel-bottom"><span>CRYSTALIGN · YOUR SMILE, CONSIDERED</span><a href="#approach">DISCOVER THE APPROACH ↓</a></div>
+      <div className="pixel-bottom"><span>CRYSTALIGN · YOUR SMILE, CONSIDERED</span><a href="#approach">DISCOVER THE APPROACH</a></div>
     </section>
   )
 }
