@@ -324,7 +324,7 @@ function Contact() {
 
   const SERVICE_ID = 'service_s8fm4ja'
   const TEMPLATE_ID = 'template_xk1si5l'
-  const PUBLIC_KEY = (import.meta as any).env?.VITE_EMAILJS_PUBLIC_KEY || ''
+  const PUBLIC_KEY = (import.meta as any).env?.VITE_EMAILJS_PUBLIC_KEY || '-bW3i3iqEmMyaiRk8'
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
